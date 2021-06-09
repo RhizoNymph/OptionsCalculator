@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Tab\Google Drive\Projects\OptionsInterface\venv"
+VIRTUAL_ENV="E:\Drive\Projects\OptionsInterface\OptionsCalculator\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

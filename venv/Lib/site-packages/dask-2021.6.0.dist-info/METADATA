@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: dask
+Version: 2021.6.0
+Summary: Parallel PyData with Task Scheduling
+Home-page: https://github.com/dask/dask/
+Maintainer: Matthew Rocklin
+Maintainer-email: mrocklin@gmail.com
+License: BSD
+Keywords: task-scheduling parallel numpy pandas pydata
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.7
+Requires-Dist: pyyaml
+Requires-Dist: cloudpickle (>=1.1.1)
+Requires-Dist: fsspec (>=0.6.0)
+Requires-Dist: toolz (>=0.8.2)
+Requires-Dist: partd (>=0.3.10)
+Provides-Extra: array
+Requires-Dist: numpy (>=1.16) ; extra == 'array'
+Provides-Extra: bag
+Provides-Extra: complete
+Requires-Dist: bokeh (!=2.0.0,>=1.0.0) ; extra == 'complete'
+Requires-Dist: distributed (==2021.06.0) ; extra == 'complete'
+Requires-Dist: numpy (>=1.16) ; extra == 'complete'
+Requires-Dist: pandas (>=0.25.0) ; extra == 'complete'
+Provides-Extra: dataframe
+Requires-Dist: numpy (>=1.16) ; extra == 'dataframe'
+Requires-Dist: pandas (>=0.25.0) ; extra == 'dataframe'
+Provides-Extra: delayed
+Provides-Extra: diagnostics
+Requires-Dist: bokeh (!=2.0.0,>=1.0.0) ; extra == 'diagnostics'
+Provides-Extra: distributed
+Requires-Dist: distributed (==2021.06.0) ; extra == 'distributed'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-rerunfailures ; extra == 'test'
+Requires-Dist: pytest-xdist ; extra == 'test'
+
+Dask
+====
+
+|Build Status| |Coverage| |Doc Status| |Gitter| |Version Status| |NumFOCUS|
+
+Dask is a flexible parallel computing library for analytics.  See
+documentation_ for more information.
+
+
+LICENSE
+-------
+
+New BSD. See `License File <https://github.com/dask/dask/blob/main/LICENSE.txt>`__.
+
+.. _documentation: https://dask.org
+.. |Build Status| image:: https://github.com/dask/dask/workflows/CI/badge.svg?branch=main
+   :target: https://github.com/dask/dask/actions?query=workflow%3A%22CI%22
+.. |Coverage| image:: https://codecov.io/gh/dask/dask/branch/main/graph/badge.svg
+   :target: https://codecov.io/gh/dask/dask/branch/main
+   :alt: Coverage status
+.. |Doc Status| image:: https://readthedocs.org/projects/dask/badge/?version=latest
+   :target: https://dask.org
+   :alt: Documentation Status
+.. |Gitter| image:: https://badges.gitter.im/Join%20Chat.svg
+   :alt: Join the chat at https://gitter.im/dask/dask
+   :target: https://gitter.im/dask/dask?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+.. |Version Status| image:: https://img.shields.io/pypi/v/dask.svg
+   :target: https://pypi.python.org/pypi/dask/
+.. |NumFOCUS| image:: https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A
+   :target: https://www.numfocus.org/
+
+
