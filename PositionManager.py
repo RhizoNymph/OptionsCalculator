@@ -12,11 +12,10 @@ class Position:
         self.premium = premium
 
     def profit(self, spot_expiry):
-        return self.asset.payoff(spot_expiry)
+        return self.sign * self.magnitude * (self.asset.payoff(spot_expiry) - self.premium)
 
     def payoff(self, spot_expiry):
-        return self.asset.payoff(spot_expiry)
-
+        return self.sign * self.magnitude * self.asset.payoff(spot_expiry)
 
 def position_payoff(position, spot_expiry):
     return position.payoff(spot_expiry)
