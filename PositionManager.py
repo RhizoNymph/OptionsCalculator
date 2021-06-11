@@ -5,11 +5,16 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 class Position:
-    def __init__(self, asset, sign, magnitude, premium):
+    def __init__(self, asset, premium, sign = "+", magnitude=1):
         self.asset = asset
-        self.sign = sign
+
         self.magnitude = magnitude
         self.premium = premium
+
+        if sign == "+":
+            self.sign = 1
+        else:
+            self.sign = -1
 
     def profit(self, spot_expiry):
         return self.sign * self.magnitude * (self.asset.payoff(spot_expiry) - self.premium)

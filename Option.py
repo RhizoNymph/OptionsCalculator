@@ -71,12 +71,12 @@ class Option:
                 return 0
 
     def payoff(self, spot_exercise):
-       if type == 'C':
+       if self.side == 'C':
             if self.strike <= spot_exercise:
                 return (spot_exercise - self.strike)
             else:
                 return 0
-       elif type == 'P':
+       elif self.side == 'P':
            if self.strike >= spot_exercise:
                return (self.strike - spot_exercise)
            else:
